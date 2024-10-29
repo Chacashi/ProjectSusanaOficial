@@ -2,7 +2,7 @@
     "name": "Controls",
     "maps": [
         {
-            "name": "game",
+            "name": "Game",
             "id": "12509d02-ebc6-48e1-b78a-1d9fb0fe6f14",
             "actions": [
                 {
@@ -164,7 +164,7 @@
             "id": "05d93d8b-f378-4754-a281-6b4509ceac7b",
             "actions": [
                 {
-                    "name": "GoMenu",
+                    "name": "OpenMenu",
                     "type": "Button",
                     "id": "9f252259-2048-4264-8fd4-6173f60f9b22",
                     "expectedControlType": "Button",
@@ -173,7 +173,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "GoIntroduction",
+                    "name": "OpenIntroduction",
                     "type": "Button",
                     "id": "60a67934-1ee0-4e4f-8673-154e4100b2d5",
                     "expectedControlType": "Button",
@@ -190,7 +190,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "GoMenu",
+                    "action": "OpenMenu",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -201,7 +201,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "GoIntroduction",
+                    "action": "OpenIntroduction",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

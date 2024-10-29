@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-
-public class ButtonUI : MonoBehaviour
+public class ButtonExit : MonoBehaviour
 {
     [SerializeField] Button myButton;
-    [SerializeField] GameObject objectReference;
+
     private void Awake()
     {
         myButton = GetComponent<Button>();
@@ -21,19 +19,7 @@ public class ButtonUI : MonoBehaviour
 
     void OnClick()
     {
-        if (objectReference.activeSelf)
-        {
-            objectReference.SetActive(false);
-        }
-        else
-        {
-            objectReference.SetActive(true);
-        }
-          
+        Application.Quit();
     }
-
-
-
-
 
 }
