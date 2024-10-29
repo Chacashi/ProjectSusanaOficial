@@ -2,7 +2,7 @@
     "name": "Controls",
     "maps": [
         {
-            "name": "Movement",
+            "name": "game",
             "id": "12509d02-ebc6-48e1-b78a-1d9fb0fe6f14",
             "actions": [
                 {
@@ -156,6 +156,54 @@
                     "action": "AxisZ",
                     "isComposite": false,
                     "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "Menu",
+            "id": "05d93d8b-f378-4754-a281-6b4509ceac7b",
+            "actions": [
+                {
+                    "name": "GoMenu",
+                    "type": "Button",
+                    "id": "9f252259-2048-4264-8fd4-6173f60f9b22",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "GoIntroduction",
+                    "type": "Button",
+                    "id": "60a67934-1ee0-4e4f-8673-154e4100b2d5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f8fded5f-770c-402b-943d-4b6f36750ff7",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GoMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6522522b-4a9a-48df-bb87-f70ae85c2b5a",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GoIntroduction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
