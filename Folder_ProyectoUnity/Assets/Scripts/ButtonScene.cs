@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class ButtonScene : MonoBehaviour
 {
     [SerializeField] string sceneName;
-    [SerializeField] Button myButton;
+     Button myButton;
 
 
     private void Awake()

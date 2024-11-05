@@ -1,17 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class ImageController : MonoBehaviour
 {
     [SerializeField] Sprite[] arrayImage;
     [SerializeField] Button buttonNext;
-    [SerializeField] Button buttonBack;
+    [SerializeField] Button SkipButton;
     [SerializeField] Image curretImage;
     [SerializeField]  int curretIndex = 0;
-
+    static event Action OnUltimateImage;
     private void Awake()
     {
         curretImage.GetComponent<Image>();
@@ -22,12 +24,7 @@ public class ImageController : MonoBehaviour
         curretImage.sprite = arrayImage[curretIndex];
 
        
-            buttonNext.onClick.AddListener(NextImage);
-        
-       
-        
-            buttonBack.onClick.AddListener(BackImage);
-       
+        buttonNext.onClick.AddListener(NextImage);
     }
 
     void NextImage()
@@ -37,17 +34,29 @@ public class ImageController : MonoBehaviour
             curretIndex++;
             curretImage.sprite = arrayImage[curretIndex];
         }
-        
-    }
 
-    void BackImage()
-    {
-
-        if (curretIndex > 0)
+        if(curretIndex == arrayImage.Length-1)
         {
-            curretIndex--;
-            curretImage.sprite = arrayImage[curretIndex];
+            OnUltimateImage?.Invoke();
         }
-        
+
     }
+
+    private void OnEnable()
+    {
+        OnUltimateImage += HideButton;
+    }
+
+    private void OnDisable()
+    {
+        OnUltimateImage -= HideButton;
+    }
+    void HideButton()
+    {
+        SkipButton.gameObject.SetActive(false);
+        buttonNext.gameObject.GetComponent<ButtonScene>().enabled = true;
+    }
+
+
+ 
 }
