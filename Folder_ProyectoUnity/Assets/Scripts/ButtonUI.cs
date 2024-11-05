@@ -17,10 +17,10 @@ public class ButtonUI : MonoBehaviour
 
     private void Start()
     {
-        myButton.onClick.AddListener(OnClick);
+        myButton.onClick.AddListener(Interactue);
     }
 
-    void OnClick()
+    void Interactue()
     {
         for (int i = 0; i < objectReferences.Length; i++)
         {

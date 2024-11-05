@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ButtonExit : MonoBehaviour
 {
-    [SerializeField] Button myButton;
+     Button myButton;
 
     private void Awake()
     {
@@ -14,10 +14,10 @@ public class ButtonExit : MonoBehaviour
 
     private void Start()
     {
-        myButton.onClick.AddListener(OnClick);
+        myButton.onClick.AddListener(Exit);
     }
 
-    void OnClick()
+    void Exit()
     {
         Application.Quit();
     }

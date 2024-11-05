@@ -7,6 +7,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     Rigidbody _compRigidbody;
+    [SerializeField] GameObject objectiveUI;
     float horizontal;
     float vertical;
     public float speed;
@@ -27,6 +28,25 @@ public class PlayerController : MonoBehaviour
     public void AxisZ(InputAction.CallbackContext context)
     {
         vertical = context.ReadValue<float>();
+    }
+
+
+    public void ButtonEsc(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            if(objectiveUI.activeSelf)
+            {
+
+                objectiveUI.SetActive(false);
+                Time.timeScale = 1.0f;
+            }
+            else
+            {
+                objectiveUI.SetActive(true);
+                Time.timeScale = 0.0f;
+            }
+        }
     }
 
     private void FixedUpdate()
