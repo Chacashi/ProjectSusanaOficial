@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -7,8 +8,8 @@ using UnityEngine.UI;
 
 public class ButtonUI : MonoBehaviour
 {
-    [SerializeField] Button myButton;
-    [SerializeField] GameObject objectReference;
+    Button myButton;
+    [SerializeField] GameObject[] objectReferences;
     private void Awake()
     {
         myButton = GetComponent<Button>();
@@ -21,14 +22,21 @@ public class ButtonUI : MonoBehaviour
 
     void OnClick()
     {
-        if (objectReference.activeSelf)
+        for (int i = 0; i < objectReferences.Length; i++)
         {
-            objectReference.SetActive(false);
+            if (objectReferences[i].activeSelf)
+            {
+                
+                objectReferences[i].SetActive(false);
+                //Time.timeScale = 1.0f;
+            }
+            else
+            {
+                objectReferences[i].SetActive(true);
+                //Time.timeScale = 0.0f;
+            }
         }
-        else
-        {
-            objectReference.SetActive(true);
-        }
+        
           
     }
 

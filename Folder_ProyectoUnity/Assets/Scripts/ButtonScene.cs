@@ -18,12 +18,16 @@ public class ButtonScene : MonoBehaviour
     }
     private void Start()
     {
+        
         myButton.onClick.AddListener(OnClick);
+        Time.timeScale = 1.0f;
     }
     
 
     void OnClick()
     {
+
         SceneManager.LoadScene(sceneName);
+        Time.timeScale = 1.0f;
     }
 }

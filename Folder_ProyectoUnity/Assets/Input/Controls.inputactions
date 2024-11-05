@@ -171,15 +171,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "OpenIntroduction",
-                    "type": "Button",
-                    "id": "60a67934-1ee0-4e4f-8673-154e4100b2d5",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -191,17 +182,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "OpenMenu",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "6522522b-4a9a-48df-bb87-f70ae85c2b5a",
-                    "path": "<Keyboard>/escape",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "OpenIntroduction",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
