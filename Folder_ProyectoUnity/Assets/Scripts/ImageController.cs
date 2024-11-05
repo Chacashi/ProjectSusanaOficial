@@ -30,15 +30,12 @@ public class ImageController : MonoBehaviour
        
     }
 
- 
-
-
-
     void NextImage()
     {
-        if (curretIndex < arrayImage.Length)
+        if (curretIndex < arrayImage.Length-1)
         {
-            curretImage.sprite = arrayImage[curretIndex++];
+            curretIndex++;
+            curretImage.sprite = arrayImage[curretIndex];
         }
         
     }
@@ -48,7 +45,8 @@ public class ImageController : MonoBehaviour
 
         if (curretIndex > 0)
         {
-            curretImage.sprite = arrayImage[curretIndex--];
+            curretIndex--;
+            curretImage.sprite = arrayImage[curretIndex];
         }
         
     }
