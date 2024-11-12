@@ -13,7 +13,6 @@ public class scheduleController : MonoBehaviour
     [SerializeField] Vector3 separation;
     string [] arrayMapRows;
     string [] arrayMapColumns;
-    [SerializeField] GameObject buttonPrefab;
     [SerializeField] Sprite[] arraySprite;
 
     private void Start()
