@@ -37,17 +37,15 @@ public class scheduleController : MonoBehaviour
                 {
                     currentMapPart = Instantiate(arrayObjects[index], new Vector3(PositionInitial.x + j * separation.x,
                     PositionInitial.y - i * separation.y,PositionInitial.z), transform.rotation);
+                    currentMapPart.GetComponent<MapPartController>().SetNewSprite(arraySprite[index]);
                 }
                 if (index == 1)
                 {
                     currentMapPart = Instantiate(arrayObjects[index], new Vector3(PositionInitial.x + j * separation.x,
                     PositionInitial.y - i * separation.y, PositionInitial.z), transform.rotation);
+                    currentMapPart.GetComponent<MapPartController>().SetNewSprite(arraySprite[index]);
                 }
-                if(index == 2)
-                {
-                    currentMapPart = Instantiate(arrayObjects[index], new Vector3(PositionInitial.x + j * separation.x,
-                    PositionInitial.y - i * separation.y, PositionInitial.z), transform.rotation);
-                }
+            
                 currentMapPart.transform.SetParent(transform);
 
             }
