@@ -1339,6 +1339,339 @@
 							"templateParameterCompartment": {
 								"$ref": "AAAAAAGS16hUuwLZxhY="
 							}
+						},
+						{
+							"_type": "UMLClassView",
+							"_id": "AAAAAAGTHriXXfcNUms=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"model": {
+								"$ref": "AAAAAAGTHriXXfcLfZE="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAGTHriXXfcOJi8=",
+									"_parent": {
+										"$ref": "AAAAAAGTHriXXfcNUms="
+									},
+									"model": {
+										"$ref": "AAAAAAGTHriXXfcLfZE="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGTHriXXfcP+Co=",
+											"_parent": {
+												"$ref": "AAAAAAGTHriXXfcOJi8="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -48,
+											"top": -16,
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGTHriXXfcQIeI=",
+											"_parent": {
+												"$ref": "AAAAAAGTHriXXfcOJi8="
+											},
+											"font": "Arial;13;1",
+											"left": 1573,
+											"top": 2327,
+											"width": 359,
+											"height": 13,
+											"text": "ScheduleController"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGTHriXXfcRHj8=",
+											"_parent": {
+												"$ref": "AAAAAAGTHriXXfcOJi8="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -48,
+											"top": -16,
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGTHriXXfcScd4=",
+											"_parent": {
+												"$ref": "AAAAAAGTHriXXfcOJi8="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -48,
+											"top": -16,
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 1568,
+									"top": 2320,
+									"width": 369,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAGTHriXXfcP+Co="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAGTHriXXfcQIeI="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAGTHriXXfcRHj8="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAGTHriXXfcScd4="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "AAAAAAGTHriXXfcTQ/M=",
+									"_parent": {
+										"$ref": "AAAAAAGTHriXXfcNUms="
+									},
+									"model": {
+										"$ref": "AAAAAAGTHriXXfcLfZE="
+									},
+									"subViews": [
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGTHrkClPc41CY=",
+											"_parent": {
+												"$ref": "AAAAAAGTHriXXfcTQ/M="
+											},
+											"model": {
+												"$ref": "AAAAAAGTHrkCj/c1NSM="
+											},
+											"font": "Arial;13;0",
+											"left": 1573,
+											"top": 2350,
+											"width": 359,
+											"height": 13,
+											"text": "+[SerializeField] TextAsset ScheduleMap",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGTHrmPaPdAGms=",
+											"_parent": {
+												"$ref": "AAAAAAGTHriXXfcTQ/M="
+											},
+											"model": {
+												"$ref": "AAAAAAGTHrmPZPc9E6I="
+											},
+											"font": "Arial;13;0",
+											"left": 1573,
+											"top": 2365,
+											"width": 359,
+											"height": 13,
+											"text": "+[SerializeField] GameObject[] arrayObjects",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGTHrmR5/dGxSU=",
+											"_parent": {
+												"$ref": "AAAAAAGTHriXXfcTQ/M="
+											},
+											"model": {
+												"$ref": "AAAAAAGTHrmR4/dD/lw="
+											},
+											"font": "Arial;13;0",
+											"left": 1573,
+											"top": 2380,
+											"width": 359,
+											"height": 13,
+											"text": "+[SerializeField] Vector3 PositionInitial",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGTHrmUyPdM/Q0=",
+											"_parent": {
+												"$ref": "AAAAAAGTHriXXfcTQ/M="
+											},
+											"model": {
+												"$ref": "AAAAAAGTHrmUxPdJaFE="
+											},
+											"font": "Arial;13;0",
+											"left": 1573,
+											"top": 2395,
+											"width": 359,
+											"height": 13,
+											"text": "+[SerializeField] Vector3 separation",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGTHrmXYPdSEmY=",
+											"_parent": {
+												"$ref": "AAAAAAGTHriXXfcTQ/M="
+											},
+											"model": {
+												"$ref": "AAAAAAGTHrmXXPdPGt4="
+											},
+											"font": "Arial;13;0",
+											"left": 1573,
+											"top": 2410,
+											"width": 359,
+											"height": 13,
+											"text": "+string [] arrayMapRows",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGTHro+P/dcYnU=",
+											"_parent": {
+												"$ref": "AAAAAAGTHriXXfcTQ/M="
+											},
+											"model": {
+												"$ref": "AAAAAAGTHro+O/dZd70="
+											},
+											"font": "Arial;13;0",
+											"left": 1573,
+											"top": 2425,
+											"width": 359,
+											"height": 13,
+											"text": "+string [] arrayMapColumns",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGTHrpB6vdi0xA=",
+											"_parent": {
+												"$ref": "AAAAAAGTHriXXfcTQ/M="
+											},
+											"model": {
+												"$ref": "AAAAAAGTHrpB4/dfSNA="
+											},
+											"font": "Arial;13;0",
+											"left": 1573,
+											"top": 2440,
+											"width": 359,
+											"height": 13,
+											"text": "+[SerializeField] GameObject buttonPrefab",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGTHrpbgPdp62U=",
+											"_parent": {
+												"$ref": "AAAAAAGTHriXXfcTQ/M="
+											},
+											"model": {
+												"$ref": "AAAAAAGTHrpbe/dmKoQ="
+											},
+											"font": "Arial;13;0",
+											"left": 1573,
+											"top": 2455,
+											"width": 359,
+											"height": 13,
+											"text": "+[SerializeField] Sprite[] arraySprite",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 1568,
+									"top": 2345,
+									"width": 369,
+									"height": 128
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "AAAAAAGTHriXXfcUqe0=",
+									"_parent": {
+										"$ref": "AAAAAAGTHriXXfcNUms="
+									},
+									"model": {
+										"$ref": "AAAAAAGTHriXXfcLfZE="
+									},
+									"subViews": [
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGTHrq6M/dxhg0=",
+											"_parent": {
+												"$ref": "AAAAAAGTHriXXfcUqe0="
+											},
+											"model": {
+												"$ref": "AAAAAAGTHrq6Lvdu8QM="
+											},
+											"font": "Arial;13;0",
+											"left": 1573,
+											"top": 2478,
+											"width": 359,
+											"height": 13,
+											"text": "+void OnDrawSchedule()",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 1568,
+									"top": 2473,
+									"width": 369,
+									"height": 23
+								},
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAGTHriXXfcV4Ok=",
+									"_parent": {
+										"$ref": "AAAAAAGTHriXXfcNUms="
+									},
+									"model": {
+										"$ref": "AAAAAAGTHriXXfcLfZE="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -24,
+									"top": -8,
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "AAAAAAGTHriXXfcWOXw=",
+									"_parent": {
+										"$ref": "AAAAAAGTHriXXfcNUms="
+									},
+									"model": {
+										"$ref": "AAAAAAGTHriXXfcLfZE="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": -24,
+									"top": -8,
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"containerChangeable": true,
+							"left": 1568,
+							"top": 2320,
+							"width": 369,
+							"height": 233,
+							"nameCompartment": {
+								"$ref": "AAAAAAGTHriXXfcOJi8="
+							},
+							"attributeCompartment": {
+								"$ref": "AAAAAAGTHriXXfcTQ/M="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAGTHriXXfcUqe0="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAGTHriXXfcV4Ok="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAGTHriXXfcWOXw="
+							}
 						}
 					]
 				},
@@ -1374,7 +1707,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGSskB1eWmC6SY="
 							},
-							"name": "[Serialized] GameObject objectiveUI"
+							"name": "[Serialized] GameObject objectiveUI",
+							"type": ""
 						}
 					],
 					"operations": [
@@ -1638,6 +1972,90 @@
 								"$ref": "AAAAAAGS16hUugLODMg="
 							},
 							"name": "void HideButton"
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAGTHriXXfcLfZE=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "ScheduleController",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGTHrkCj/c1NSM=",
+							"_parent": {
+								"$ref": "AAAAAAGTHriXXfcLfZE="
+							},
+							"name": "[SerializeField] TextAsset ScheduleMap"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGTHrmPZPc9E6I=",
+							"_parent": {
+								"$ref": "AAAAAAGTHriXXfcLfZE="
+							},
+							"name": "[SerializeField] GameObject[] arrayObjects"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGTHrmR4/dD/lw=",
+							"_parent": {
+								"$ref": "AAAAAAGTHriXXfcLfZE="
+							},
+							"name": "[SerializeField] Vector3 PositionInitial"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGTHrmUxPdJaFE=",
+							"_parent": {
+								"$ref": "AAAAAAGTHriXXfcLfZE="
+							},
+							"name": "[SerializeField] Vector3 separation"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGTHrmXXPdPGt4=",
+							"_parent": {
+								"$ref": "AAAAAAGTHriXXfcLfZE="
+							},
+							"name": "string [] arrayMapRows"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGTHro+O/dZd70=",
+							"_parent": {
+								"$ref": "AAAAAAGTHriXXfcLfZE="
+							},
+							"name": "string [] arrayMapColumns"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGTHrpB4/dfSNA=",
+							"_parent": {
+								"$ref": "AAAAAAGTHriXXfcLfZE="
+							},
+							"name": "[SerializeField] GameObject buttonPrefab"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGTHrpbe/dmKoQ=",
+							"_parent": {
+								"$ref": "AAAAAAGTHriXXfcLfZE="
+							},
+							"name": "[SerializeField] Sprite[] arraySprite"
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGTHrq6Lvdu8QM=",
+							"_parent": {
+								"$ref": "AAAAAAGTHriXXfcLfZE="
+							},
+							"name": "void OnDrawSchedule"
 						}
 					]
 				}
