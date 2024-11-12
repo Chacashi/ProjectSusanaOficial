@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gameplay.unity
     guid: 780c880e5b13c444297c443376d751e6
+  - enabled: 1
+    path: Assets/Scenes/Ciencias.unity
+    guid: 0fee0eeb20f91e44798e908233944b23
+  - enabled: 1
+    path: Assets/Scenes/Matematicas.unity
+    guid: 5d643f2ac718f0a45bdf7e77a3d68ced
+  - enabled: 1
+    path: Assets/Scenes/Letras.unity
+    guid: 1da04b371a5cdf6478155b6717828b72
   m_configObjects: {}

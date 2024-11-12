@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Rendering;
+
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -52,6 +51,26 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         _compRigidbody.velocity = new Vector3(speed * horizontal,_compRigidbody.velocity.y ,vertical*speed);
+ 
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other != null && other.gameObject.tag == "Matematicas")
+        {
+            SceneManager.LoadScene("Matematicas");
+        }
+
+        if (other != null && other.gameObject.tag == "Ciencias")
+        {
+            SceneManager.LoadScene("Ciencias");
+        }
+
+        if (other != null && other.gameObject.tag == "Letras")
+        {
+            SceneManager.LoadScene("Letras");
+        }
     }
 
 }
