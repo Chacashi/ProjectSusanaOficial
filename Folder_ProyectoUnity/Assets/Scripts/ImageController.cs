@@ -14,6 +14,7 @@ public class ImageController : MonoBehaviour
     [SerializeField] Image curretImage;
     [SerializeField]  int curretIndex = 0;
     static event Action OnUltimateImage;
+    public static event Action<Sprite> OnImageLoaded;
     private void Awake()
     {
         curretImage.GetComponent<Image>();
@@ -22,7 +23,7 @@ public class ImageController : MonoBehaviour
     {
        
         curretImage.sprite = arrayImage[curretIndex];
-
+        OnImageLoaded?.Invoke(arrayImage[curretIndex]); 
        
         buttonNext.onClick.AddListener(NextImage);
     }
@@ -33,6 +34,7 @@ public class ImageController : MonoBehaviour
         {
             curretIndex++;
             curretImage.sprite = arrayImage[curretIndex];
+            OnImageLoaded?.Invoke(arrayImage[curretIndex]);
         }
 
         if(curretIndex == arrayImage.Length-1)
