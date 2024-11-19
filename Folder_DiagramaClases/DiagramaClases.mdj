@@ -60,8 +60,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -448,
-											"top": 560,
+											"left": -288,
+											"top": 608,
 											"height": 13
 										},
 										{
@@ -71,8 +71,8 @@
 												"$ref": "AAAAAAGSskB1emmFIY4="
 											},
 											"font": "Arial;13;1",
-											"left": 429,
-											"top": 2383,
+											"left": 509,
+											"top": 2407,
 											"width": 430,
 											"height": 13,
 											"text": "PlayerControll"
@@ -85,8 +85,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -448,
-											"top": 560,
+											"left": -288,
+											"top": 608,
 											"width": 73.67724609375,
 											"height": 13,
 											"text": "(from Model)"
@@ -99,15 +99,15 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -448,
-											"top": 560,
+											"left": -288,
+											"top": 608,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 424,
-									"top": 2376,
+									"left": 504,
+									"top": 2400,
 									"width": 440,
 									"height": 25,
 									"stereotypeLabel": {
@@ -143,8 +143,8 @@
 												"$ref": "AAAAAAGSskEWxGmt96Y="
 											},
 											"font": "Arial;13;0",
-											"left": 429,
-											"top": 2406,
+											"left": 509,
+											"top": 2430,
 											"width": 430,
 											"height": 13,
 											"text": "+private Rigidbody _compRigidbody",
@@ -160,8 +160,8 @@
 												"$ref": "AAAAAAGSskTA6WoJaIs="
 											},
 											"font": "Arial;13;0",
-											"left": 429,
-											"top": 2421,
+											"left": 509,
+											"top": 2445,
 											"width": 430,
 											"height": 13,
 											"text": "+[Serialized] Layermask layer",
@@ -177,8 +177,8 @@
 												"$ref": "AAAAAAGS+63AY/VvEPo="
 											},
 											"font": "Arial;13;0",
-											"left": 429,
-											"top": 2436,
+											"left": 509,
+											"top": 2460,
 											"width": 430,
 											"height": 13,
 											"text": "+[Serialized] GameObject objectiveUI",
@@ -186,8 +186,8 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 424,
-									"top": 2401,
+									"left": 504,
+									"top": 2425,
 									"width": 440,
 									"height": 53
 								},
@@ -211,8 +211,8 @@
 												"$ref": "AAAAAAGSskcUemoUsOM="
 											},
 											"font": "Arial;13;0",
-											"left": 429,
-											"top": 2459,
+											"left": 509,
+											"top": 2483,
 											"width": 430,
 											"height": 13,
 											"text": "+public IsJump()",
@@ -228,8 +228,8 @@
 												"$ref": "AAAAAAGSskjoKmoeLe8="
 											},
 											"font": "Arial;13;0",
-											"left": 429,
-											"top": 2474,
+											"left": 509,
+											"top": 2498,
 											"width": 430,
 											"height": 13,
 											"text": "+public IsAtacck()",
@@ -245,8 +245,8 @@
 												"$ref": "AAAAAAGSsmhDEGonhKg="
 											},
 											"font": "Arial;13;0",
-											"left": 429,
-											"top": 2489,
+											"left": 509,
+											"top": 2513,
 											"width": 430,
 											"height": 13,
 											"text": "+public void AxisX(InputAction.CallbackContext context)",
@@ -262,8 +262,8 @@
 												"$ref": "AAAAAAGSsmmtmGoyhsU="
 											},
 											"font": "Arial;13;0",
-											"left": 429,
-											"top": 2504,
+											"left": 509,
+											"top": 2528,
 											"width": 430,
 											"height": 13,
 											"text": "+public void AxisZ(InputAction.CallbackContext context)",
@@ -279,8 +279,8 @@
 												"$ref": "AAAAAAGS+66s3vV5MHo="
 											},
 											"font": "Arial;13;0",
-											"left": 429,
-											"top": 2519,
+											"left": 509,
+											"top": 2543,
 											"width": 430,
 											"height": 13,
 											"text": "+public void ButtonEsc(InputAction.CallbackContext context)",
@@ -288,8 +288,8 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 424,
-									"top": 2454,
+									"left": 504,
+									"top": 2478,
 									"width": 440,
 									"height": 83
 								},
@@ -304,8 +304,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -224,
-									"top": 280,
+									"left": -144,
+									"top": 304,
 									"width": 10,
 									"height": 10
 								},
@@ -320,16 +320,16 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -224,
-									"top": 280,
+									"left": -144,
+									"top": 304,
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 424,
-							"top": 2376,
+							"left": 504,
+							"top": 2400,
 							"width": 440,
 							"height": 232,
 							"nameCompartment": {
@@ -2586,8 +2586,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -544,
-											"top": -64,
+											"left": 64,
+											"top": -112,
 											"height": 13
 										},
 										{
@@ -2597,8 +2597,8 @@
 												"$ref": "AAAAAAGTK4UIlZUZoCc="
 											},
 											"font": "Arial;13;1",
-											"left": 573,
-											"top": 2703,
+											"left": 877,
+											"top": 2679,
 											"width": 239,
 											"height": 13,
 											"text": "StateGameManager"
@@ -2611,8 +2611,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -544,
-											"top": -64,
+											"left": 64,
+											"top": -112,
 											"width": 73.67724609375,
 											"height": 13,
 											"text": "(from Model)"
@@ -2625,15 +2625,15 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": -544,
-											"top": -64,
+											"left": 64,
+											"top": -112,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 568,
-									"top": 2696,
+									"left": 872,
+									"top": 2672,
 									"width": 249,
 									"height": 25,
 									"stereotypeLabel": {
@@ -2669,8 +2669,8 @@
 												"$ref": "AAAAAAGTK4WQ5JVJlLk="
 											},
 											"font": "Arial;13;0",
-											"left": 573,
-											"top": 2726,
+											"left": 877,
+											"top": 2702,
 											"width": 239,
 											"height": 13,
 											"text": "+Attribute1",
@@ -2678,8 +2678,8 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 568,
-									"top": 2721,
+									"left": 872,
+									"top": 2697,
 									"width": 249,
 									"height": 23
 								},
@@ -2703,8 +2703,8 @@
 												"$ref": "AAAAAAGTK4WD2pVDvlE="
 											},
 											"font": "Arial;13;0",
-											"left": 573,
-											"top": 2749,
+											"left": 877,
+											"top": 2725,
 											"width": 239,
 											"height": 13,
 											"text": "+Operation1()",
@@ -2712,8 +2712,8 @@
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 568,
-									"top": 2744,
+									"left": 872,
+									"top": 2720,
 									"width": 249,
 									"height": 23
 								},
@@ -2728,8 +2728,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -272,
-									"top": -32,
+									"left": 32,
+									"top": -56,
 									"width": 10,
 									"height": 10
 								},
@@ -2744,16 +2744,16 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": -272,
-									"top": -32,
+									"left": 32,
+									"top": -56,
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 568,
-							"top": 2696,
+							"left": 872,
+							"top": 2672,
 							"width": 249,
 							"height": 137,
 							"nameCompartment": {
