@@ -10,6 +10,7 @@ public class ButtonUI : MonoBehaviour
 {
     Button myButton;
     [SerializeField] GameObject[] objectReferences;
+    [SerializeField] GameObject[] objectButtons;
     private void Awake()
     {
         myButton = GetComponent<Button>();
@@ -34,6 +35,19 @@ public class ButtonUI : MonoBehaviour
             {
                 objectReferences[i].SetActive(true);
                 //Time.timeScale = 0.0f;
+            }
+        }
+
+
+        for(int i = 0;i < objectButtons.Length; i++)
+        {
+            if (objectButtons[i].GetComponent<Button>().interactable)
+            {
+                objectButtons[i].GetComponent<Button>().interactable = false;
+            }
+            else
+            {
+                objectButtons[i].GetComponent<Button>().interactable = true;
             }
         }
         
