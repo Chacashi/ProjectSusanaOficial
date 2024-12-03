@@ -1,33 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.SearchService;
+
 using UnityEngine;
+
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-
-public class ButtonScene : MonoBehaviour
+public class ButtonScene : ButtonController
 {
-    [SerializeField] string sceneName;
-     Button myButton;
+    [SerializeField] private string _sceneName;
 
 
-    private void Awake()
+    protected override void Interactue()
     {
-        myButton = GetComponent<Button>();  
+        SceneManager.LoadScene(_sceneName);
     }
-    private void Start()
-    {
-        
-        myButton.onClick.AddListener(ChangueScene);
-        Time.timeScale = 1.0f;
-    }
-    
 
-    void ChangueScene()
-    {
 
-        SceneManager.LoadScene(sceneName);
-        Time.timeScale = 1.0f;
-    }
 }

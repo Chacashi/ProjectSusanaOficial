@@ -1,61 +1,74 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.Serialization;
+using DG.Tweening;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 
-public class ButtonUI : MonoBehaviour
+
+public class ButtonUI : ButtonController, IFade
 {
-    Button myButton;
-    [SerializeField] GameObject[] objectReferences;
-    [SerializeField] GameObject[] objectButtons;
-    private void Awake()
-    {
-        myButton = GetComponent<Button>();
-    }
+   
 
-    private void Start()
-    {
-        myButton.onClick.AddListener(Interactue);
-    }
+    [SerializeField] private CanvasGroup canvasGroupObjective;
+    [SerializeField] private CanvasGroup canvasGroupPrincipal;
+    [SerializeField] private float durationFade;
+    private Tween fadeTween;
 
-    void Interactue()
+
+
+    protected override void Interactue()
     {
-        for (int i = 0; i < objectReferences.Length; i++)
+
+        if (canvasGroupObjective.alpha == 1)
         {
-            if (objectReferences[i].activeSelf)
-            {
-                
-                objectReferences[i].SetActive(false);
-                //Time.timeScale = 1.0f;
-            }
-            else
-            {
-                objectReferences[i].SetActive(true);
-                //Time.timeScale = 0.0f;
-            }
+            FadeOut();
+            canvasGroupPrincipal.interactable = true;
+            canvasGroupPrincipal.blocksRaycasts = true;
+        }
+        else
+        {
+            FadeIn();
+            canvasGroupPrincipal.interactable = false;
+            canvasGroupPrincipal.blocksRaycasts = false;
+        }
+    }
+
+    public void Fade(float endValue, float duration, TweenCallback onEnd)
+    {
+
+        if (fadeTween != null)
+        {
+            fadeTween.Kill(false);
         }
 
 
-        for(int i = 0;i < objectButtons.Length; i++)
+
+        fadeTween = canvasGroupObjective.DOFade(endValue, duration);
+        fadeTween.onComplete += onEnd;
+    }
+    public void Fade(float endValue, float duration)
+    {
+        canvasGroupObjective.DOFade(endValue, duration);
+    }
+    public void FadeIn()
+    {
+
+        Fade(1f, durationFade, () =>
         {
-            if (objectButtons[i].GetComponent<Button>().interactable)
-            {
-                objectButtons[i].GetComponent<Button>().interactable = false;
-            }
-            else
-            {
-                objectButtons[i].GetComponent<Button>().interactable = true;
-            }
-        }
-        
-          
+            canvasGroupObjective.interactable = true;
+            canvasGroupObjective.blocksRaycasts = true;
+
+        });
     }
 
+    public void FadeOut()
+    {
+
+        canvasGroupObjective.interactable = false;
+        canvasGroupObjective.blocksRaycasts = false;
 
 
+        Fade(0f, durationFade);
+
+    }
 
 
 }

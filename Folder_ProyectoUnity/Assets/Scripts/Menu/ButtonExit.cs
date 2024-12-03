@@ -1,24 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class ButtonExit : MonoBehaviour
+public class ButtonExit : ButtonController
 {
-     Button myButton;
 
-    private void Awake()
+    protected override void Interactue()
     {
-        myButton = GetComponent<Button>();
-    }
-
-    private void Start()
-    {
-        myButton.onClick.AddListener(Exit);
-    }
-
-    void Exit()
-    {
+        print("Saliste");
         Application.Quit();
     }
 
