@@ -33,23 +33,21 @@ public class MenuManagerController : MonoBehaviour
 
     private void OnEnable()
     {
-        InputReader.OnPressedSpace += FadeOutTitle;
         InputReader.OnPressedSpace += FadeInPanelMenu;
     }
 
     private void OnDisable()
     {
-        InputReader.OnPressedSpace -= FadeOutTitle;
+  
         InputReader.OnPressedSpace -= FadeInPanelMenu;
     }
-    void FadeOutTitle()
-    {
-        Fade(0,durationFadeText,textTitle);
-    }
+  
 
     void FadeInPanelMenu()
     {
         FadeIn(panelMenu);
+        Fade(0, durationFadeText, textTitle);
+
     }
 
     void ButtonToMenuPressed()
@@ -62,7 +60,7 @@ public class MenuManagerController : MonoBehaviour
     public void FadeIn( CanvasGroup canvasGroup)
     {
 
-        Fade<CanvasGroup>(1f, durationFadePanel,canvasGroup, () =>
+        Fade(1f, durationFadePanel,canvasGroup, () =>
         {
             canvasGroup.interactable = true;
             canvasGroup.blocksRaycasts = true;
@@ -75,7 +73,7 @@ public class MenuManagerController : MonoBehaviour
     public void FadeOut(CanvasGroup canvasGroup)
     {
 
-        Fade<CanvasGroup>(0f, durationFadePanel,canvasGroup, () =>
+        Fade(0f, durationFadePanel,canvasGroup, () =>
         {
             canvasGroup.interactable = false;
             canvasGroup.blocksRaycasts = false;
@@ -85,22 +83,21 @@ public class MenuManagerController : MonoBehaviour
 
 
     }
-    public void Fade<T>(float endValue, float duration, T element,  TweenCallback onEnd)
+    public void Fade(float endValue, float duration, CanvasGroup element,  TweenCallback onEnd)
     {
-        dynamic aux = element;
         if (fadeTween != null)
         {
             fadeTween.Kill(false);
         }
 
-        fadeTween = aux.DOFade(endValue, duration);
+        fadeTween = element.DOFade(endValue, duration);
         fadeTween.onComplete += onEnd;
     }
 
 
-    public void Fade<T>(float endValue, float duration,T element )
+    public void Fade(float endValue, float duration, TMP_Text element )
     {
-        dynamic aux = element;
-        aux.DOFade(endValue, duration);
+        
+        element.DOFade(endValue, duration);
     }
 }

@@ -13,7 +13,7 @@ public class ImageController : MonoBehaviour
     [SerializeField] Button SkipButton;
     [SerializeField] Image curretImage;
     [SerializeField]  int curretIndex = 0;
-    static event Action OnUltimateImage;
+    static event Action OnLastImage;
     public static event Action<Sprite> OnImageLoaded;
     private void Awake()
     {
@@ -39,19 +39,19 @@ public class ImageController : MonoBehaviour
 
         if(curretIndex == arrayImage.Length-1)
         {
-            OnUltimateImage?.Invoke();
+            OnLastImage?.Invoke();
         }
 
     }
 
     private void OnEnable()
     {
-        OnUltimateImage += HideButton;
+        OnLastImage += HideButton;
     }
 
     private void OnDisable()
     {
-        OnUltimateImage -= HideButton;
+        OnLastImage -= HideButton;
     }
     void HideButton()
     {
