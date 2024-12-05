@@ -1498,9 +1498,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d960c45e2e562d4d9890f18207bbee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectReferences:
-  - {fileID: 602945122}
-  objectButtons: []
+  audioClip: {fileID: 0}
+  timeScale: 0
+  toScale: {x: 0, y: 0, z: 0}
+  canvasGroupObjective: {fileID: 0}
+  canvasGroupPrincipal: {fileID: 0}
+  durationFade: 0
 --- !u!1 &254521805
 GameObject:
   m_ObjectHideFlags: 0
@@ -2461,9 +2464,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d960c45e2e562d4d9890f18207bbee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectReferences:
-  - {fileID: 1618242243}
-  objectButtons: []
+  audioClip: {fileID: 0}
+  timeScale: 0
+  toScale: {x: 0, y: 0, z: 0}
+  canvasGroupObjective: {fileID: 0}
+  canvasGroupPrincipal: {fileID: 0}
+  durationFade: 0
 --- !u!1 &468812807
 GameObject:
   m_ObjectHideFlags: 0
@@ -3606,9 +3612,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d960c45e2e562d4d9890f18207bbee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectReferences:
-  - {fileID: 93874889}
-  objectButtons: []
+  audioClip: {fileID: 0}
+  timeScale: 0
+  toScale: {x: 0, y: 0, z: 0}
+  canvasGroupObjective: {fileID: 0}
+  canvasGroupPrincipal: {fileID: 0}
+  durationFade: 0
 --- !u!1 &831963289 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5896167059242774251, guid: c93076088e6c29a4787fbcc16467f5e1,
@@ -4602,9 +4611,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d960c45e2e562d4d9890f18207bbee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectReferences:
-  - {fileID: 92316810}
-  objectButtons: []
+  audioClip: {fileID: 0}
+  timeScale: 0
+  toScale: {x: 0, y: 0, z: 0}
+  canvasGroupObjective: {fileID: 0}
+  canvasGroupPrincipal: {fileID: 0}
+  durationFade: 0
 --- !u!1 &1382003884
 GameObject:
   m_ObjectHideFlags: 3
@@ -5474,7 +5486,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d7070d582a9374997cbbd45e3498e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Menu
+  audioClip: {fileID: 0}
+  timeScale: 0
+  toScale: {x: 0, y: 0, z: 0}
+  _sceneName: 
 --- !u!114 &1764779517
 MonoBehaviour:
   m_ObjectHideFlags: 0
