@@ -2,15 +2,17 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using TMPro;
+using DG.Tweening;
+
 
 public class PlayerController : MonoBehaviour
 {
-    Rigidbody _compRigidbody;
-    [SerializeField] GameObject objectiveUI;
-    float horizontal;
-    float vertical;
-    public float speed;
 
+
+    [SerializeField] float speed;
+    Rigidbody _compRigidbody;
+    private Vector2 direction;
 
     private void Awake()
     {
@@ -18,42 +20,18 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    public void AxisX(InputAction.CallbackContext context)
-    {
-        horizontal = context.ReadValue<float>();
-    }
-   
-
-    public void AxisZ(InputAction.CallbackContext context)
-    {
-        vertical = context.ReadValue<float>();
-    }
-
-
-    public void ButtonEsc(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            if(objectiveUI.activeSelf)
-            {
-
-                objectiveUI.SetActive(false);
-                Time.timeScale = 1.0f;
-            }
-            else
-            {
-                objectiveUI.SetActive(true);
-                Time.timeScale = 0.0f;
-            }
-        }
-    }
-
     private void FixedUpdate()
     {
-        _compRigidbody.velocity = new Vector3(speed * horizontal,_compRigidbody.velocity.y ,vertical*speed);
- 
+
+        _compRigidbody.velocity = new Vector3(speed * direction.x, _compRigidbody.velocity.y, direction.y * speed);
     }
 
+
+
+    void GetInputMovement(Vector2 direction)
+    {
+        this.direction = direction;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -72,5 +50,16 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene("Letras");
         }
     }
+    private void OnEnable()
+    {
+        InputReaderGameplay.GetValueMovement += GetInputMovement; 
+    }
+    private void OnDisable()
+    {
+        InputReaderGameplay.GetValueMovement -= GetInputMovement;
+    }
+
+
+
 
 }

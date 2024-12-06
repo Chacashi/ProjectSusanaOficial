@@ -33,13 +33,13 @@ public class MenuManagerController : MonoBehaviour
 
     private void OnEnable()
     {
-        InputReader.OnPressedSpace += FadeInPanelMenu;
+        InputReaderMenu.OnPressedSpace += FadeInPanelMenu;
     }
 
     private void OnDisable()
     {
   
-        InputReader.OnPressedSpace -= FadeInPanelMenu;
+        InputReaderMenu.OnPressedSpace -= FadeInPanelMenu;
     }
   
 

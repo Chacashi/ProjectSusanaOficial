@@ -194,7 +194,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -221}
+  m_AnchoredPosition: {x: 0, y: -221.00003}
   m_SizeDelta: {x: 0, y: -607.218}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &68762971
@@ -3465,7 +3465,7 @@ MonoBehaviour:
   audioClip: {fileID: 11400000, guid: 4ae4f9663fa27c8409d20743d37fd7a0, type: 2}
   timeScale: 0.2
   toScale: {x: 1.2, y: 1.2, z: 0}
-  _sceneName: History
+  _sceneName: Gameplay
 --- !u!1 &850500106
 GameObject:
   m_ObjectHideFlags: 0

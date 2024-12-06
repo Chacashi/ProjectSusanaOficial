@@ -5,7 +5,7 @@ using System;
 
 
 
-public class InputReader : MonoBehaviour
+public class InputReaderMenu : MonoBehaviour
 {
 
     PlayerInput input;
